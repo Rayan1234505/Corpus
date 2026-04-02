@@ -1,0 +1,31 @@
+{
+  "name": "corpus-monorepo",
+  "version": "1.0.0",
+  "description": "Submission for AI Lab CA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build --workspaces",
+    "dev": "concurrently 'npm run dev -w @corpus/api' 'npm run dev -w @corpus/discord' 'npm run dev -w @corpus/web'",
+    "start": "concurrently 'npm run start -w @corpus/api' 'npm run start -w @corpus/discord' 'npm run preview -w @corpus/web'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altf4-games/Corpus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/altf4-games/Corpus/issues"
+  },
+  "homepage": "https://github.com/altf4-games/Corpus#readme",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

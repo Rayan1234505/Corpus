@@ -1,0 +1,32 @@
+{
+  "name": "@corpus/discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "eslint": "^10.0.3",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "dependencies": {
+    "@corpus/core": "^1.0.0",
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.3.1"
+  }
+}

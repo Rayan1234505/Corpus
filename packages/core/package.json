@@ -1,0 +1,30 @@
+{
+  "name": "@corpus/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/pdf-parse": "^1.1.5",
+    "eslint": "^10.0.3",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "dependencies": {
+    "@google/genai": "^1.45.0",
+    "@google/generative-ai": "^0.24.1",
+    "pdf-parse": "^1.1.1",
+    "zod": "^4.3.6"
+  }
+}
